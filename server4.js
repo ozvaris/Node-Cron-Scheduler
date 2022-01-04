@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 const cron = require("node-cron");
 
-app.listen(2403, () => {
+const PORT = 2403;
+
+app.listen(PORT, () => {
   //https://momentjs.com/timezone/
   //America/Sao_Paulo
   //Europe/Istanbul
@@ -26,4 +28,7 @@ app.listen(2403, () => {
       timezone: "Europe/Istanbul",
     }
   );
+
+  console.log(`Server started at port ${PORT}`);
+
 });
