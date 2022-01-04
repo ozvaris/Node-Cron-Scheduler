@@ -17,7 +17,7 @@ app.listen(PORT, () => {
     () => {
       const now = new Date();
       console.log(
-        "Running a job at 01:00 at Europe/Istanbul timezone" +
+        "Running a job at 01:00 at Europe/Istanbul timezone " +
           now.toLocaleString("en-GB", {
             timeZone: "Europe/Istanbul",
           })

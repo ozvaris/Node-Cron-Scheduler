@@ -13,9 +13,9 @@ app.listen(PORT, () => {
   //en-US
   //en-GB
   cron.schedule(
-    "0 9 * * * *",
+    "0 25 19 * * *",
     () => {
-      const now = new Date();
+      const now = new Date();      
       console.log(
         "Running a job at 01:00 at Europe/Istanbul timezone" +
           now.toLocaleString("en-GB", {
